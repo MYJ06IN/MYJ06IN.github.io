@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffe4ec;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #ff4d94;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Botones con efecto de hover */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fb {
+    background: #3b5998;
+}
+
+.ig {
+    background: #e4405f;
+}
+
+/* Efecto al pasar el mouse */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
